@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Portal Live Chat",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Website/Live Chat",
     "summary": "Authenticated customer live chat on portal with persistent history and attachments",
     "description": """
-Portal Live Chat for Odoo 18 (Community & Enterprise)
+Portal Live Chat for Odoo 19 (Community & Enterprise)
 =====================================================
 
 Turn your Odoo Customer Portal into a secure, real-time client communication channel.

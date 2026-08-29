@@ -1,4 +1,4 @@
-# Portal Live Chat (Odoo 18 Community & Enterprise)
+# Portal Live Chat (Odoo 19 Community & Enterprise)
 
 **Portal Live Chat** transforms your Odoo Customer Portal (`/my`) into a secure, real-time client communication channel. It connects logged-in portal clients with operators in Discuss while identifying contacts by name/email, maintaining conversation history across logins, and enabling document attachments.
 
@@ -22,7 +22,7 @@
 
 ## 📋 Requirements & Dependencies
 
-- **Odoo Version**: 18.0 (Community & Enterprise)
+- **Odoo Version**: 19.0 (Community & Enterprise)
 - **Required Modules**:
   - `im_livechat` (Live Chat)
   - `portal` (Customer Portal)
