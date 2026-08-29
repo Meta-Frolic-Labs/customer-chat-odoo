@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.portal_livechat</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='general_settings']" position="inside">
+                <block title="Portal Live Chat" name="portal_livechat_setting_container">
+                    <setting string="Portal Live Chat Channel"
+                             help="Select the Live Chat channel to display for portal users.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="portal_livechat_channel_id" class="col-lg-3 o_light_label" string="Channel"/>
+                                <field name="portal_livechat_channel_id" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Visibility Mode"
+                             help="Restricting to Portal Users hides the chat widget and blocks unauthorized requests from public visitors.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="portal_livechat_visibility_mode" class="col-lg-3 o_light_label" string="Visibility"/>
+                                <field name="portal_livechat_visibility_mode" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Session Persistence"
+                             help="Continuous mode reuses the client conversation thread so full chat history is preserved across visits.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="portal_livechat_persistence_mode" class="col-lg-3 o_light_label" string="Persistence"/>
+                                <field name="portal_livechat_persistence_mode" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

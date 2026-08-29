@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Live Chat sessions are created by the portal widget, not manually.
+        List/form already set create="false"; kanban did not, so "New" opened
+        a dead-end create form with no Save/Discard.
+    -->
+    <record id="discuss_channel_view_kanban_portal_livechat" model="ir.ui.view">
+        <field name="name">discuss.channel.kanban.inherit.portal_livechat</field>
+        <field name="model">discuss.channel</field>
+        <field name="inherit_id" ref="im_livechat.discuss_channel_view_kanban"/>
+        <field name="arch" type="xml">
+            <kanban position="attributes">
+                <attribute name="create">false</attribute>
+                <attribute name="quick_create">false</attribute>
+            </kanban>
+        </field>
+    </record>
+</odoo>
