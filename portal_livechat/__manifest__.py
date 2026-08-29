@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Customer Live Chat",
-    "version": "18.0.1.0.01",
+    "version": "18.0.1.0.02",
     "category": "Website/Live Chat",
 
     "summary": "Authenticated customer live chat with persistent history and file sharing",
